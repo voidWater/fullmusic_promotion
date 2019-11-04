@@ -9,30 +9,31 @@
 			<img class="img-bar" src="../assets/1.jpg">
 		  </mt-swipe-item>
 		  <mt-swipe-item class="banner-item">
-			<img class="img-bar" src="../assets/2.jpg">
+			<img class="img-bar" src="../assets/xs_2.jpg">
 		  </mt-swipe-item>
 		</mt-swipe>
 	 </div>
 	 <div class="date-bar">
-		<span class="title"><b>限时抢购</b></span>
+		<span class="title"><b>双11特惠活动</b></span>
 		<span class="date">距离活动结束还有{{day}}天{{hour}}时{{min}}分{{sec}}秒</span>
 	 </div>
-	 <div class="title-bar">简乐艺术中心 迎国庆299超值优惠活动</div>
+	 <div class="title-bar">学琴不孤单，两人报名半价优惠</div>
 	 <div class="title-info"><span>音乐启蒙、</span><span>左右脑开发</span></div>
-	 <div class="pic-bar"><span class="curr"><b>￥299</b></span><span class="jd"><s>￥800</s></span></div>
+	 <div class="pic-bar"><span class="curr"><b>￥960/人</b></span><span class="jd"><s>￥1920/人</s></span></div>
 	 <div class="title-tip"><span><i class="fa fa-exclamation-circle"></i>不与其他优惠共享&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span><i class="fa fa-exclamation-circle"></i>请提前预约</span></div>
 	 <div class="bar"></div>
 	 <div class="content">
 		<div class="biv">
 			<div><img class="img" src="../assets/兔子.png"><div class="title">课程介绍</div></div>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp299抢购四节价值800的钢琴课，专业的老师带给孩子最专业的启蒙，宗旨是让孩子在音乐启蒙的道路上不走弯路
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp抢购12节钢琴季课，专业的老师带给孩子最专业的启蒙，宗旨是让孩子在音乐启蒙的道路上不走弯路
 		</div>
 		<div class="biv">
 			<div><img class="img" src="../assets/兔子.png"><div class="title">活动说明</div></div>
-			<p>1一人仅限购买一份</p>
-			<p>2课程火爆，请您提前24小时预约</p>
-			<p>3参加活动的家长请及时添加工作人员微信</p>
-			<p style="color:red">ps:转发此链接到朋友圈并获得28个赞可获得价值300元的声乐体验课一节，由加拿大华人艺术家陈红浪老师亲自教授。</p>
+			<p>1&nbsp&nbsp两人一起报名便可参与特惠活动</p>
+			<p>2&nbsp&nbsp或者一人报名再邀请一人报名（不邀请他人按原价收费）</p>
+			<p>3&nbsp&nbsp老生不参与半价活动，但老生邀请新生并且新生报名成功赠送价值360元的钢琴和声乐课各一节</p>
+			<p>4&nbsp&nbsp参加活动的家长请及时添加工作人员微信</p>
+			<p style="color:red">ps:转发此链接到朋友圈并获得11个赞可获得价值300元的声乐体验课一节，由加拿大华人艺术家陈红浪老师亲自教授。</p>
 		</div>
 		<div class="biv">
 			<div><img class="img" src="../assets/兔子.png"><div class="title">中心简介</div></div>
@@ -91,7 +92,7 @@
 			<img class="img" src="../assets/ls.jpg">
 		</div>
 		<div class="title">
-			识别图中二维码，及时与客服联系，了解活动详情，一起过个有意义的国庆吧
+			识别图中二维码，及时与客服联系，了解活动详情，一起过个有意义的双11吧
 		</div>
 	</div>
 	<div class="footer" @click="upPopup">立即抢购</div>
@@ -176,7 +177,7 @@ export default {
         this.center.lat = e.point.lat
     },
 	countdown:function () {//倒计时
-        var deadline= new Date("10/08/2019")
+        var deadline= new Date("11/11/2019")
 		var now= new Date()
 		var nowNum = deadline-now;
 		this.day=parseInt(nowNum/(60*60*24*1000)) 
